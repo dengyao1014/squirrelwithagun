@@ -1,70 +1,78 @@
-# [Spunki Incredibox](https://spunkiincredibox.com/) Website
+# Krampus: A Dark Christmas Horror Adventure Game
 
-Welcome to the official repository for [SpunkiIncredibox.com](https://spunkiincredibox.com/), the landing page for the Spunki mod of the popular Incredibox music creation game.
+![Krampus Game Banner](img/home-header1-big.jpg)
 
-## About Spunki Incredibox
+## Game Overview
 
-Spunki Incredibox is an innovative online music creation tool that puts the power of rap music composition at your fingertips. As a special version of the popular Incredibox platform, Spunki is dedicated to creating unique and exciting rap music compositions.
+Krampus is an innovative browser-based horror game that reimagines the dark folklore of the Alpine Christmas demon. Step into the shoes of Krampus and embark on a chilling adventure that turns traditional holiday narratives upside down.
 
-### Key Features
+## Key Features
 
-- Pre-set audio samples in various rap styles (Hip Hop, Trap, Dubstep, and more)
-- Multiple Sprunki characters for different vocal parts
-- Drag-and-drop interface for easy music composition
-- Various sound effects and filters to enhance your creations
-- Instant recording and saving capabilities
-- Online platform - no downloads required
-- Unique "Gore Mode" for darker themes
+- Unique Concept: Play as Krampus, the legendary Christmas demon
+- Rich Storytelling: Immerse yourself in authentic Alpine mythology
+- Atmospheric Gameplay: Stealth, strategy, and supernatural horror
+- Browser-Based: Play instantly, no downloads required
+- Free to Play: Accessible to all horror game enthusiasts
 
-## Website Structure
+## Gameplay Mechanics
 
-This repository contains the source code for the SpunkiIncredibox.com landing page. The website is built using pure HTML, CSS, and JavaScript for easy deployment and maintenance.
+- Hunt down naughty children in a dark, festive setting
+- Navigate through intricate Alpine village environments
+- Solve puzzles and avoid detection
+- Experience a unique blend of horror and dark humor
 
-### Main Sections
+## How to Play
 
-1. Introduction to Spunki Incredibox
-2. Key Features
-3. How to Create with Spunki Incredibox
-4. Advantages of Spunki Incredibox
-5. New Features Showcase
-6. Community Engagement
-7. Availability and Platforms
+1. Visit [Krampus.top](https://krampus.top)
+2. Click "Play Now"
+3. Use arrow keys or WASD to move
+4. Interact with the environment using mouse clicks
+5. Complete objectives and survive the night
 
-## Development
+## Technology Stack
 
-To run this website locally:
+- HTML5
+- CSS3
+- Responsive Web Design
+- Embedded Game Platform: CrazyGames
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/qiayue/spunkiincredibox.git
-   ```
-2. Open the `index.html` file in your web browser.
+## Quick Start
 
-## Deployment
+```bash
+# Clone the repository
+git clone https://github.com/dengyao1014/krampus.git
 
-This website is designed to be easily deployed on Vercel. To deploy:
+# Open index.html in your browser
+open index.html
+```
 
-1. Fork this repository to your GitHub account.
-2. Connect your Vercel account to your GitHub account.
-3. Create a new project in Vercel and select this repository.
-4. Vercel will automatically deploy your site and provide you with a URL.
+## Repository Structure
+
+- `index.html`: Main game website
+- `site.webmanifest`: Web app manifest
+- `img/`: Game and website images
+- `README.md`: Project documentation
+
+## Design Philosophy
+
+Krampus combines traditional folklore with modern gaming experiences, creating a unique narrative that challenges conventional holiday storytelling.
 
 ## Contributing
 
-We welcome contributions to improve SpunkiIncredibox.com! If you have suggestions or improvements, please:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-1. Fork the repository
-2. Create a new branch for your feature
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
+## Folklore Background
+
+Krampus is based on the Alpine folkloric figure who punishes misbehaving children during the Christmas season. Our game brings this dark legend to life with an immersive, interactive experience.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is open-source and available under the MIT License.
 
 ## Contact
 
-For any queries regarding this website or the Spunki Incredibox mod, please open an issue in this repository or contact us through our website.
+For inquiries, please open an issue in the GitHub repository or contact us through [Krampus.top](https://krampus.top).
 
-Enjoy creating music with Spunki Incredibox!
+---
+
+**Embrace the Dark Side of Christmas! **
