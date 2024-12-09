@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Krampus: A Dark Christmas Horror Adventure Game
 
 ![Krampus Game Banner](img/home-header1-big.jpg)
@@ -76,3 +77,6 @@ For inquiries, please open an issue in the GitHub repository or contact us throu
 ---
 
 **Embrace the Dark Side of Christmas! **
+=======
+# squirrelwithagun
+>>>>>>> 1ac7544e6d8dff4facd79f20c1ca68382cb4ebd4
