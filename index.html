@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krampus - Play the Exciting Horror Adventure Game | KRAMPUS.TOP</title>
-    <meta name="description" content="Play Krampus, an exciting horror adventure game where you help Krampus hunt down naughty children. Experience the thrill of this unique Christmas-themed horror game now!">
-    <link rel="canonical" href="https://krampus.top/"/>
+    <title>Squirrel with a Gun - Play the Hilarious Action Game | SQUIRRELWITHAGUN.LINK</title>
+    <meta name="description" content="Play Squirrel with a Gun, a hilarious action game where you control a squirrel armed with various weapons. Experience the chaos and fun of this unique action-packed game now!">
+    <link rel="canonical" href="https://squirrelwithagun.link/"/>
     <style>
         * {
             margin: 0;
@@ -13,15 +13,17 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            color: #fff;
-            background-color: #1a1a1a;
+            color: #333;
+            background-color: #ffffff;
             padding-top: 60px;
+            background-image: linear-gradient(45deg, #ffffff 25%, #f8f9ff 25%, #f8f9ff 50%, #ffffff 50%, #ffffff 75%, #f8f9ff 75%, #f8f9ff);
+            background-size: 40px 40px;
         }
         header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./img/home-header1-big.jpg') no-repeat center center/cover;
-            height: 60vh;
+            background: linear-gradient(rgba(43, 84, 244, 0.7), rgba(40, 152, 244, 0.7)), url('https://img.crazygames.com/games/squirrel-with-a-gun/cover-1696332806126.png?auto=format,compress&q=75&cs=strip&ch=DPR&w=1200') no-repeat center center/cover;
+            height: 70vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -29,32 +31,103 @@
             text-align: center;
             padding: 2rem;
             color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, #ffffff, transparent);
         }
         .logo {
-            font-size: 4rem;
+            font-size: 4.5rem;
             font-weight: bold;
             margin-bottom: 1rem;
-            color: #ff0000;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: #ffffff;
+            text-shadow: 3px 3px 0px #4b49f4, 
+                         -1px -1px 0px #4b49f4,  
+                         1px -1px 0px #4b49f4,
+                         -1px 1px 0px #4b49f4,
+                         1px 1px 0px #4b49f4;
+            transform: rotate(-3deg);
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: rotate(-3deg) translateY(0); }
+            50% { transform: rotate(-3deg) translateY(-10px); }
         }
         .tagline {
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-bottom: 2rem;
-            color: #ff4444;
+            color: #fff;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 700;
         }
         .cta-button {
             display: inline-block;
-            padding: 1rem 2rem;
-            background-color: #ff0000;
+            padding: 1.2rem 2.5rem;
+            background-color: #4b49f4;
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(75, 73, 244, 0.4);
+            border: 3px solid #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .cta-button:hover {
-            background-color: #cc0000;
+            background-color: #2898f4;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(40, 152, 244, 0.6);
+        }
+        .nav-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(75, 73, 244, 0.1);
+            z-index: 1000;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            text-decoration: none;
+            color: #4b49f4;
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .nav-logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav-links a:hover {
+            color: #2898f4;
         }
         main {
             max-width: 1200px;
@@ -62,84 +135,47 @@
             padding: 2rem;
         }
         section {
-            padding: 2.5rem 0;
+            padding: 4rem 0;
             position: relative;
             scroll-margin-top: 80px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(75, 73, 244, 0.1);
         }
-
-        section:nth-child(odd) {
-            background-color: #1a1a1a;
-        }
-
-        section:nth-child(even) {
-            background-color: #222;
-        }
-
         .section-content {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         section h2 {
-            font-size: 2rem;
-            color: #ff4444;
-            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: #4b49f4;
+            margin-bottom: 2rem;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 2px;
             position: relative;
-            padding-bottom: 0.8rem;
+            padding-bottom: 1rem;
         }
-
         section h2::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #ff4444, transparent);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #4b49f4, #2898f4);
+            border-radius: 2px;
         }
-
         .content-block {
-            background-color: rgba(42, 42, 42, 0.6);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-
-        ul, ol {
-            padding-left: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        p {
-            margin-bottom: 0.8rem;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        dt {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        dd {
-            margin-bottom: 1rem;
-            margin-left: 1rem;
-        }
-
-        dd:last-child {
-            margin-bottom: 0;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 10px rgba(75, 73, 244, 0.05);
+            border: 2px solid #f0f0f0;
         }
         .game-container {
             position: relative;
@@ -148,6 +184,8 @@
             padding-bottom: 56.25%;
             overflow: hidden;
             margin: 2rem 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(75, 73, 244, 0.2);
         }
         .game-container iframe {
             position: absolute;
@@ -156,189 +194,102 @@
             width: 100%;
             height: 100%;
             border: none;
+            border-radius: 15px;
         }
-        .section {
-            background-color: #2a2a2a;
-            border-left: 5px solid #ff0000;
-            padding-left: 2rem;
+        ul, ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
         }
-        .section ul {
-            list-style-type: none;
-            padding-left: 1rem;
-            color: #fff;
-        }
-        .section li {
-            margin-bottom: 0.5rem;
+        li {
+            margin-bottom: 0.8rem;
             position: relative;
         }
-        .section li:before {
-            content: "•";
-            color: #ff0000;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
-        #how-to-play ol {
-            padding-left: 2rem;
-            color: #fff;
-        }
-        #how-to-play li {
-            margin-bottom: 1rem;
-        }
-        #game-features table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            color: #fff;
-        }
-        #game-features th, #game-features td {
-            border: 1px solid #444;
-            padding: 0.5rem;
-            text-align: left;
-        }
-        #game-features th {
-            background-color: #3a3a3a;
-        }
-        #tips-and-tricks ul, #community-spotlight ul {
-            padding-left: 1.5rem;
-            color: #fff;
-        }
-        #faq dt {
-            font-weight: bold;
-            margin-top: 1rem;
-            color: #ff4444;
-        }
-        #faq dd {
-            margin-left: 1rem;
-            margin-bottom: 1rem;
-            color: #fff;
+        ul li::before {
+            content: "🎮";
+            position: absolute;
+            left: -1.5rem;
+            top: 0.2rem;
         }
         footer {
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('./img/home-header1-big.jpg') no-repeat center center/cover;
-            padding: 2rem 0;
+            background: linear-gradient(135deg, #4b49f4, #2898f4);
+            color: #fff;
             text-align: center;
-            margin-top: 3rem;
+            padding: 2rem;
+            margin-top: 4rem;
         }
         footer p {
             margin: 0.5rem 0;
             font-size: 0.9rem;
-            color: #999;
+            opacity: 0.9;
         }
-        footer .social-links {
-            margin: 1rem 0;
-        }
-        footer .social-links a {
-            color: #fff;
-            margin: 0 1rem;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        footer .social-links a:hover {
-            color: #ff0000;
-        }
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            margin: 2rem 0;
-        }
-        
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-        .nav-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(26, 26, 26, 0.95);
-            z-index: 1000;
-            padding: 0.5rem 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .nav-logo span {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: #ff0000;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            margin-left: auto;
-        }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 0.5rem 1rem;
-            transition: all 0.3s ease;
-            border-radius: 4px;
-            white-space: nowrap;
-        }
-        
-        nav a:hover {
-            color: #ff0000;
-            background-color: rgba(255,0,0,0.1);
-        }
-
-        /* 移动端响应式 */
         @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 1rem;
-                padding: 1rem;
-            }
-
             .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 0.5rem;
+                display: none;
             }
-            
-            nav a {
-                font-size: 0.9rem;
-                padding: 0.3rem 0.6rem;
+            .logo {
+                font-size: 3rem;
             }
-
-            .nav-logo span {
-                font-size: 1.1rem;
+            .tagline {
+                font-size: 1.5rem;
+            }
+            section {
+                padding: 2rem 0;
+            }
+            section h2 {
+                font-size: 2rem;
             }
         }
-        /* 平滑滚动 */
-        html {
-            scroll-behavior: smooth;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
         }
-        /* 锚点目标位置偏移，考虑固定导航栏高度 */
-        :target {
-            scroll-margin-top: 80px;
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #4b49f4;
+            color: #fff;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f8f9ff;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .feature-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(75, 73, 244, 0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(75, 73, 244, 0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(75, 73, 244, 0.15);
+            border-color: #2898f4;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #4b49f4;
+        }
+        .feature-card h3 {
+            color: #4b49f4;
+            margin-bottom: 0.5rem;
+        }
+        .feature-card p {
+            color: #666;
         }
     </style>
 </head>
@@ -346,11 +297,11 @@
     <div class="nav-container">
         <nav>
             <a href="#" class="nav-logo">
-                <span>KRAMPUS</span>
+                <span>SQUIRREL WITH A GUN</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#play">Play</a></li>
-                <li><a href="#about-krampus">About</a></li>
+                <li><a href="#about-squirrel-with-a-gun">About</a></li>
                 <li><a href="#game-features">Features</a></li>
                 <li><a href="#how-to-play">How to Play</a></li>
                 <li><a href="#lore">Legend</a></li>
@@ -361,44 +312,61 @@
     </div>
 
     <header>
-        <h1 class="logo">Krampus</h1>
-        <h2 class="tagline">A Terrifying Christmas Adventure</h2>
+        <h1 class="logo">Squirrel with a Gun</h1>
+        <h2 class="tagline">A Hilarious Action Game</h2>
         <a href="#play" class="cta-button">Play Now</a>
     </header>
 
     <main>
-        <section class="section" id="introduction">
-            <div class="section-content">
-                <h2>Welcome to Krampus</h2>
-                <div class="content-block">
-                    <p>Step into the dark side of Christmas with Krampus, an atmospheric horror adventure game that brings the ancient Alpine folklore to life. As Krampus, the Christmas demon, you'll hunt down naughty children and deliver your own brand of holiday justice.</p>
-                    <p>Whether you're a fan of horror games or simply looking for a unique Christmas-themed adventure, Krampus offers an immersive experience that will keep you on the edge of your seat.</p>
-                </div>
-            </div>
-        </section>
-
         <section class="section" id="play">
             <div class="section-content">
-                <h2>Play Krampus</h2>
+                <h2>Play Squirrel with a Gun</h2>
                 <div class="content-block">
                     <div class="game-container">
-                        <iframe src="https://www.crazygames.com/embed/krampus" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                        <iframe src="https://www.crazygames.com/embed/squirrel-with-a-gun" frameborder="0" allow="gamepad *" width="100%" height="100%"></iframe>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎮</div>
+                            <h3>Easy Controls</h3>
+                            <p>Simple and intuitive controls make it easy to jump into the action</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔫</div>
+                            <h3>Various Weapons</h3>
+                            <p>Choose from different weapons to cause mayhem</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🌍</div>
+                            <h3>Open World</h3>
+                            <p>Explore a vast neighborhood filled with opportunities</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="about-krampus">
+        <section class="section" id="introduction">
             <div class="section-content">
-                <h2>About Krampus</h2>
+                <h2>Welcome to Squirrel with a Gun</h2>
                 <div class="content-block">
-                    <p>Krampus is based on the terrifying Christmas demon from Alpine folklore. In tradition, while Saint Nicholas rewards good children with gifts, Krampus punishes those who have misbehaved. This game brings this dark legend to life in an exciting and atmospheric adventure.</p>
-                    <p>Key aspects of Krampus include:</p>
+                    <p>Welcome to the wacky world of Squirrel with a Gun, where you play as an adorable yet heavily armed squirrel causing chaos in a peaceful neighborhood. This unique action game combines cute characters with intense gameplay, creating an unforgettable gaming experience.</p>
+                    <p>Whether you're a fan of action games or simply looking for a unique gaming experience, Squirrel with a Gun offers an immersive experience that will keep you on the edge of your seat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="about-squirrel-with-a-gun">
+            <div class="section-content">
+                <h2>About Squirrel with a Gun</h2>
+                <div class="content-block">
+                    <p>Squirrel with a Gun is based on a unique concept of a heavily armed squirrel causing chaos in a peaceful neighborhood. This game brings this dark legend to life in an exciting and atmospheric adventure.</p>
+                    <p>Key aspects of Squirrel with a Gun include:</p>
                     <ul>
-                        <li>Immersive horror gameplay set in a Christmas theme</li>
-                        <li>Atmospheric environments inspired by Alpine villages</li>
-                        <li>Unique blend of stealth and action mechanics</li>
-                        <li>Rich storytelling based on authentic folklore</li>
+                        <li>Immersive action gameplay set in a neighborhood theme</li>
+                        <li>Atmospheric environments inspired by suburban areas</li>
+                        <li>Unique blend of exploration and combat mechanics</li>
+                        <li>Rich storytelling based on authentic game lore</li>
                     </ul>
                 </div>
             </div>
@@ -415,23 +383,23 @@
                         </tr>
                         <tr>
                             <td>Gameplay Style</td>
-                            <td>Horror Adventure</td>
+                            <td>Action</td>
                         </tr>
                         <tr>
                             <td>Setting</td>
-                            <td>Dark Christmas, Alpine Village</td>
+                            <td>Neighborhood</td>
                         </tr>
                         <tr>
                             <td>Main Character</td>
-                            <td>Krampus (Christmas Demon)</td>
+                            <td>Squirrel with a Gun</td>
                         </tr>
                         <tr>
                             <td>Key Mechanics</td>
-                            <td>Stealth, Hunting, Puzzle-solving</td>
+                            <td>Exploration, Combat, Puzzle-solving</td>
                         </tr>
                         <tr>
                             <td>Graphics</td>
-                            <td>Atmospheric 2D Art</td>
+                            <td>Colorful 3D Art</td>
                         </tr>
                     </table>
                 </div>
@@ -440,7 +408,7 @@
 
         <section class="section" id="how-to-play">
             <div class="section-content">
-                <h2>How to Play Krampus</h2>
+                <h2>How to Play Squirrel with a Gun</h2>
                 <div class="content-block">
                     <ol>
                         <li>Movement Controls:
@@ -452,15 +420,15 @@
                         </li>
                         <li>Game Objectives:
                             <ul>
-                                <li>Hunt down naughty children</li>
-                                <li>Navigate through the village</li>
-                                <li>Solve environmental puzzles</li>
-                                <li>Avoid detection when necessary</li>
+                                <li>Explore the neighborhood</li>
+                                <li>Complete missions</li>
+                                <li>Cause mayhem and chaos</li>
+                                <li>Interact with civilians and objects</li>
                             </ul>
                         </li>
                         <li>Tips for Success:
                             <ul>
-                                <li>Use the shadows to your advantage</li>
+                                <li>Use your surroundings to your advantage</li>
                                 <li>Listen for audio cues</li>
                                 <li>Explore thoroughly for hidden items</li>
                                 <li>Time your movements carefully</li>
@@ -473,10 +441,10 @@
 
         <section class="section" id="tips-and-tricks">
             <div class="section-content">
-                <h2>Tips and Tricks for Krampus Masters</h2>
+                <h2>Tips and Tricks for Squirrel with a Gun Masters</h2>
                 <div class="content-block">
                     <ul>
-                        <li>Master the art of stealth: Learn to move silently and use shadows effectively</li>
+                        <li>Master the art of exploration: Learn to navigate the neighborhood effectively</li>
                         <li>Explore thoroughly: Many useful items are hidden in less obvious places</li>
                         <li>Learn enemy patterns: Understanding NPC behaviors is key to success</li>
                         <li>Use your abilities wisely: Time your special abilities for maximum effect</li>
@@ -489,15 +457,15 @@
 
         <section class="section" id="lore">
             <div class="section-content">
-                <h2>The Legend of Krampus</h2>
+                <h2>The Legend of Squirrel with a Gun</h2>
                 <div class="content-block">
-                    <p>Krampus originates from Alpine folklore, particularly in regions of Austria, Bavaria, Croatia, and other Central European areas. This fearsome creature is said to be the counterpart to Saint Nicholas, punishing children who have misbehaved throughout the year.</p>
-                    <p>Traditional characteristics of Krampus include:</p>
+                    <p>Squirrel with a Gun originates from a unique concept of a heavily armed squirrel causing chaos in a peaceful neighborhood. This game brings this dark legend to life in an exciting and atmospheric adventure.</p>
+                    <p>Traditional characteristics of Squirrel with a Gun include:</p>
                     <ul>
-                        <li>Half-goat, half-demon appearance</li>
-                        <li>Carries chains and bells</li>
-                        <li>Appears on Krampusnacht (December 5th)</li>
-                        <li>Known for taking naughty children away in his sack</li>
+                        <li>Heavily armed squirrel</li>
+                        <li>Causes chaos in a peaceful neighborhood</li>
+                        <li>Unique blend of exploration and combat mechanics</li>
+                        <li>Rich storytelling based on authentic game lore</li>
                     </ul>
                 </div>
             </div>
@@ -508,14 +476,14 @@
                 <h2>Frequently Asked Questions</h2>
                 <div class="content-block">
                     <dl>
-                        <dt>Is Krampus suitable for children?</dt>
-                        <dd>Due to its horror elements and dark themes, Krampus is recommended for mature audiences.</dd>
+                        <dt>Is Squirrel with a Gun suitable for children?</dt>
+                        <dd>Due to its action elements and mild violence, Squirrel with a Gun is recommended for mature audiences.</dd>
                         
-                        <dt>Can I play Krampus on mobile devices?</dt>
-                        <dd>Yes, Krampus is playable on both desktop and mobile devices through our website.</dd>
+                        <dt>Can I play Squirrel with a Gun on mobile devices?</dt>
+                        <dd>Yes, Squirrel with a Gun is playable on both desktop and mobile devices through our website.</dd>
                         
                         <dt>Is there a multiplayer mode?</dt>
-                        <dd>Currently, Krampus is a single-player experience focused on atmospheric horror adventure.</dd>
+                        <dd>Currently, Squirrel with a Gun is a single-player experience focused on action gameplay.</dd>
                         
                         <dt>Are there different difficulty levels?</dt>
                         <dd>The game maintains a consistent challenge level designed to be accessible while remaining engaging.</dd>
@@ -529,9 +497,9 @@
 
         <section class="section" id="get-started">
             <div class="section-content">
-                <h2>Ready to Experience the Horror?</h2>
+                <h2>Ready to Experience the Chaos?</h2>
                 <div class="content-block">
-                    <p>Dive into the dark world of Krampus and experience a Christmas story like no other. No download required - play instantly in your browser!</p>
+                    <p>Dive into the wacky world of Squirrel with a Gun and experience a gaming experience like no other. No download required - play instantly in your browser!</p>
                     <a href="#play" class="cta-button">Start Playing Now</a>
                 </div>
             </div>
@@ -539,14 +507,13 @@
 
         <section class="section" id="gameplay">
             <div class="section-content">
-                <h2>Krampus Gameplay</h2>
+                <h2>Squirrel with a Gun Gameplay</h2>
                 <div class="content-block">
-                    <div class="video-container">
+                    <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
                         <iframe 
-                            width="100%" 
-                            height="100%" 
-                            src="https://www.youtube.com/embed/zq9ezmGlnYY" 
-                            title="Krampus Gameplay"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            src="https://www.youtube.com/embed/5mpnSSJwSRw" 
+                            title="Squirrel with a Gun Gameplay"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen>
@@ -558,12 +525,12 @@
     </main>
     
     <footer>
-        <p>&copy; 2025 KRAMPUS.TOP - All Rights Reserved</p>
-        <p>Krampus is a game based on Alpine folklore. All rights to their respective owners.</p>
+        <p>&copy; 2025 SQUIRRELWITHAGUN.LINK - All Rights Reserved</p>
+        <p>Squirrel with a Gun - All rights to their respective owners.</p>
     </footer>
 
     <div style="display:none">
-        <script defer data-domain="krampus.top" src="https://click.pageview.click/js/script.js"></script>
+        <script defer data-domain="squirrelwithagun.link" src="https://click.pageview.click/js/script.js"></script>
     </div>
 </body>
 </html>
